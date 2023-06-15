@@ -6,7 +6,7 @@ const { DB_HOST, PORT } = process.env;
 console.log(typeof DB_HOST);
 mongoose.set('strictQuery', true);
 mongoose
-  .connect(DB_HOST, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb+srv://bogdangaponenko1996:11223344f@contacts.s21792h.mongodb.net/contacts_reader?retryWrites=true&w=majority" { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     //  подключение к базе данных
 
