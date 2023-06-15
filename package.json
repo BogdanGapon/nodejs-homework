@@ -28,5 +28,8 @@
     "eslint-plugin-promise": "5.2.0",
     "joi": "^17.9.2",
     "nodemon": "2.0.15"
+  },
+  "engines": {
+    "node": ">=14 <15"
   }
 }
