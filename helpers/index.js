@@ -1,3 +1,4 @@
 const HttpError = require('./HttpError');
-
-module.exports = HttpError;
+const handleMongooseError = require('./handleMongooseError');
+const isValidId = require('./isValidObjectId');
+module.exports = { HttpError, handleMongooseError, isValidId };
