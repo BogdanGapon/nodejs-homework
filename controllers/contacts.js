@@ -1,15 +1,8 @@
 const { HttpError } = require('../helpers/');
-// const Joi = require('joi');
 const { Contact } = require('../models/contact');
 const { schemaContact } = require('../models/contact');
 const { schemaFavorite } = require('../models/contact');
 
-// const schemaContact = Joi.object({
-//   name: Joi.string().required(),
-//   email: Joi.string().required(),
-//   phone: Joi.string().required(),
-//   favorite: Joi.boolean(),
-// });
 const getAll = async (req, res, next) => {
   try {
     const result = await Contact.find();
